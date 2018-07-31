@@ -12,7 +12,7 @@ import { YoutubeService } from './services/youtube.service';
 })
 
 export class AppComponent implements OnInit {
-  title = 'Frontend';
+  title = 'BLUE Player';
   public videos:any=[];
   selectioned: boolean;
   id:String;

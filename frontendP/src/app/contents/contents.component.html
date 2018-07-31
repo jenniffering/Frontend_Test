@@ -1,3 +1,8 @@
-<p>
-  contents works!
-</p>
+<div  class="jumbotron" *ngIf="!selecionadV; else other_content" >
+    <app-videos [videos]="videos" [onSelection]="onSelectionC" [selecionadO]="selecionadV" ></app-videos>
+</div>
+<ng-template #other_content>
+    <p>
+        otro
+       </p>
+</ng-template>

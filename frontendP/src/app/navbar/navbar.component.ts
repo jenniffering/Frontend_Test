@@ -26,8 +26,8 @@ export class NavbarComponent implements OnInit {
   };
 
   onSelectionN(){
-    this.onSelection(false,"/#");
-
+    this.selecionadO=false;
+    this.onSelection(this.selecionadO,"/#");
   };
 
 

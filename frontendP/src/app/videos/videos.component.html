@@ -1,3 +1,8 @@
-<p>
-  videos works!
-</p>
+<div >
+<p>Result of the search >></p>
+<div class="row">
+<div class="card text-center bg-light mb-3 col-sm-6 col-md-4"  *ngFor="let item of videos">
+ <app-video [onVideo]="seleccionF" [item]="item" [img]="item.snippet.thumbnails.medium.url" [title]="item.snippet.title" [description]="item.snippet.description" [videoID]="item.id.videoId" [channel]="item.snippet.channelTitle"></app-video>
+</div>
+</div>
+</div>
