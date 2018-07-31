@@ -1,8 +1,6 @@
 <div  class="jumbotron" *ngIf="!selecionadV; else other_content" >
-    <app-videos [videos]="videos" [onSelection]="onSelectionC" [selecionadO]="selecionadV" ></app-videos>
+    <app-videos [videos]="videos" [onSelection]="onSelectionC" [selecionadO]="selecionadV"></app-videos> 
 </div>
 <ng-template #other_content>
-    <p>
-        otro
-       </p>
+        <app-show-video [idVideoS]="idVideo" [titleVS]="titleV" [descriptionVS]="descriptionV" [channelVS]="channelV"></app-show-video> 
 </ng-template>

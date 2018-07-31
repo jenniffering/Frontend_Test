@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-show-video',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-video.component.css']
 })
 export class ShowVideoComponent implements OnInit {
+@Input() idVideoS: any;
+@Input() titleVS: String;
+@Input() descriptionVS:String;
+@Input() channelVS: String;
 
   constructor() { }
 

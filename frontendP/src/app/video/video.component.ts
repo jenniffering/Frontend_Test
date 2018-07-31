@@ -19,6 +19,6 @@ export class VideoComponent implements OnInit {
   ngOnInit() {
   }
   OnShow(){
-    this.onVideo(true, this.videoID, this.title, this.description, this.channel, this.img);
+    this.onVideo(true, this.videoID, this.title, this.description, this.channel);
   }
 }

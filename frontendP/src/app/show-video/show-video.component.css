@@ -1,0 +1,11 @@
+.c{
+    background: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    display: block;
+    margin: auto;
+    height: 80vh;
+}

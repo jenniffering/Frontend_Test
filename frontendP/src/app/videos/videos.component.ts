@@ -28,7 +28,7 @@ export class VideosComponent implements OnInit {
     this.channel=channelV;
     this.descripcion=descripcionV;
     this.img=imgV;
-    this.onSelection(seleccionado, idV);
+    this.onSelection(seleccionado, idV, tituloV, descripcionV, channelV);
   };
 
 }
