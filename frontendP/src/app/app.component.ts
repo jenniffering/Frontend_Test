@@ -14,7 +14,7 @@ import { YoutubeService } from './services/youtube.service';
 export class AppComponent implements OnInit {
   title = 'Frontend';
   public videos:any=[];
-  seleccionado: boolean;
+  selectioned: boolean;
   id:String;
 
   constructor(public _ys:YoutubeService) {
@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.seleccion = this.seleccion.bind(this);
+    this.selection = this.selection.bind(this);
   }
   //Search Video api and return array Videos
   searchVideo(search: String){
@@ -31,9 +31,8 @@ export class AppComponent implements OnInit {
     }
     )};
 
-
-    seleccion(click: boolean, idV: String){
-      this.seleccionado = click;
+    selection(click: boolean, idV: String){
+      this.selectioned = click;
       this.id=idV;
     };
 }
