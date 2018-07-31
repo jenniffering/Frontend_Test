@@ -12,6 +12,8 @@ import { VideoComponent } from './video/video.component';
 import { ShowVideoComponent } from './show-video/show-video.component';
 import { RoutingModule } from './routing/routing.module';
 import { YoutubeService } from './services/youtube.service';
+import { UrlPipe } from './pipes/url.pipe';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { YoutubeService } from './services/youtube.service';
     ContentsComponent,
     VideosComponent,
     VideoComponent,
-    ShowVideoComponent
+    ShowVideoComponent,
+    UrlPipe
   ],
   imports: [
     BrowserModule,
