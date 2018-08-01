@@ -12,7 +12,7 @@ export class YoutubeService {
   //Method to search video
 
   getVideo(search: String){
-    let uri = `${this.baseURL}?part=snippet&maxResults=21&q=${search}&key=AIzaSyASSJNgzHQQDmhotVtZZwUbDGibRw7OQCc`; 
+    let uri = `${this.baseURL}?part=snippet&maxResults=27&q=${search}&key=AIzaSyASSJNgzHQQDmhotVtZZwUbDGibRw7OQCc`; 
     return this._http.get<any>(uri);
   }
 }
