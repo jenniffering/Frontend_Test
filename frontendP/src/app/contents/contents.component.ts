@@ -20,7 +20,7 @@ export class ContentsComponent implements OnInit {
     this.onSelectionC = this.onSelectionC.bind(this);
   }
   
-  onSelectionC(selectioned : boolean, id: any,title: String,description: string, channel:string){
+  onSelectionC(selectioned : boolean, id: any,title: String, description: string, channel:string){
     this.idVideo= id;
     this.titleV= title;
     this.desciptionV= description;
